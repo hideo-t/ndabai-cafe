@@ -167,6 +167,37 @@ a { color: inherit; }
 .copyright { text-align: center; font-size: 11px; color: var(--muted); margin-top: 28px; }
 .powered { text-align: center; font-size: 10px; color: var(--muted); margin-top: 4px; letter-spacing: .05em; }
 
+/* ===== Mobile 最適化 ===== */
+@media (max-width: 720px) {
+  .container { padding: 0 16px; }
+  /* ヘッダー: 1行目=ロゴ＋操作、2行目=ナビ(横スクロール) */
+  .site-header .inner { gap: 8px 12px; padding: 8px 14px; }
+  .site-header .logo img { height: 40px; }
+  .header-actions { margin-left: auto; gap: 6px; }
+  .icon-btn { width: 30px; height: 30px; font-size: 13px; }
+  .contact-btn { padding: 7px 13px; font-size: 11px; }
+  .main-nav { order: 3; flex: 0 0 100%; gap: 2px; padding-top: 6px; margin-top: 2px; border-top: 1px solid var(--line); }
+  .main-nav a { font-size: 12px; padding: 6px 9px; }
+  /* 余白を圧縮 */
+  .hero { padding: 32px 0; }
+  .hero-copy h1 { margin-bottom: 14px; }
+  .hero-visual img { height: 220px; }
+  .section { padding: 40px 0; }
+  .section-head { margin-bottom: 22px; }
+  .section-head .en { font-size: 26px; }
+  .duo-card { padding: 22px; }
+  /* テイクアウトバッジを縮小 */
+  .takeout-badge { width: 78px; height: 78px; font-size: 10px; right: 4px; bottom: 4px; }
+  .takeout-badge .ic { font-size: 18px; }
+  /* フッターQRを横並び維持 */
+  .site-footer .grid { gap: 18px; }
+}
+@media (max-width: 380px) {
+  .main-nav a { font-size: 11px; padding: 5px 7px; }
+  .site-header .logo img { height: 36px; }
+  .hero-copy h1 { font-size: 22px; }
+}
+
 /* ===== Print ===== */
 @media print {
   .site-header, .header-actions, .contact-btn, .btn-pill, .buy-btn, .category-filter { display: none; }
