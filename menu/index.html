@@ -16,6 +16,13 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@400;500;700&family=Noto+Sans+JP:wght@400;500;700&family=Dancing+Script:wght@600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../shared/style.css?v=3">
+<style>
+  .menu-gallery{display:flex;flex-direction:column;gap:20px;max-width:780px;margin:26px auto 0;}
+  .menu-page{display:block;border-radius:14px;overflow:hidden;box-shadow:0 6px 22px rgba(0,0,0,.10);line-height:0;transition:transform .2s ease, box-shadow .2s ease;}
+  .menu-page:hover{transform:translateY(-2px);box-shadow:0 12px 30px rgba(0,0,0,.16);}
+  .menu-page img{width:100%;height:auto;display:block;}
+  .menu-hint{text-align:center;margin-top:18px;font-size:13px;color:#999;}
+</style>
 </head>
 <body>
 
@@ -42,9 +49,19 @@
 
 <section class="section">
   <div class="container">
-    <div class="section-head"><span class="en">Menu</span><span class="ja">メニュー・テーブル予約</span></div>
-    <p class="lead">メニューとテーブル予約は<strong>近日公開</strong>します。<br>予約はGoogle Apps Scriptで受付予定です（日付・時間・人数・連絡先）。</p>
-    <div class="center" style="margin-top:24px;"><a class="btn-pill" href="mailto:info@ndanda.net">メールで問い合わせる ›</a></div>
+    <div class="section-head"><span class="en">Menu</span><span class="ja">メニュー</span></div>
+    <p class="lead">お米と発酵のランチ、自家焙煎コーヒー。<br>季節により内容が変わる場合があります。</p>
+    <div class="menu-gallery">
+      <a class="menu-page" href="../assets/images/menu/menu-1.webp" target="_blank" rel="noopener"><img src="../assets/images/menu/menu-1.webp" alt="nda焙 メニュー 1ページ目｜nda焙Cafeの原点・玄米コーヒー" loading="lazy" width="1500" height="2121"></a>
+      <a class="menu-page" href="../assets/images/menu/menu-2.webp" target="_blank" rel="noopener"><img src="../assets/images/menu/menu-2.webp" alt="nda焙 メニュー 2ページ目" loading="lazy" width="1500" height="2121"></a>
+      <a class="menu-page" href="../assets/images/menu/menu-3.webp" target="_blank" rel="noopener"><img src="../assets/images/menu/menu-3.webp" alt="nda焙 メニュー 3ページ目" loading="lazy" width="1500" height="2121"></a>
+      <a class="menu-page" href="../assets/images/menu/menu-4.webp" target="_blank" rel="noopener"><img src="../assets/images/menu/menu-4.webp" alt="nda焙 メニュー 4ページ目" loading="lazy" width="1500" height="2121"></a>
+      <a class="menu-page" href="../assets/images/menu/menu-5.webp" target="_blank" rel="noopener"><img src="../assets/images/menu/menu-5.webp" alt="nda焙 メニュー 5ページ目" loading="lazy" width="1500" height="2121"></a>
+      <a class="menu-page" href="../assets/images/menu/menu-6.webp" target="_blank" rel="noopener"><img src="../assets/images/menu/menu-6.webp" alt="nda焙 メニュー 6ページ目" loading="lazy" width="1500" height="2121"></a>
+      <a class="menu-page" href="../assets/images/menu/menu-7.webp" target="_blank" rel="noopener"><img src="../assets/images/menu/menu-7.webp" alt="nda焙 メニュー 7ページ目" loading="lazy" width="1500" height="2121"></a>
+    </div>
+    <p class="menu-hint">※ 画像をタップすると拡大表示します。テーブル予約は近日公開予定です。</p>
+    <div class="center" style="margin-top:18px;"><a class="btn-pill" href="mailto:info@ndanda.net">テーブル予約・お問い合わせ ›</a></div>
   </div>
 </section>
 
